@@ -1,11 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from './routes/Home'
+import Rank from './routes/Rank'
+import Location from './routes/Location'
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='title'>두잇!</h1>
-    </div>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/rank" element={<Rank />} />
+        <Route path="/location" element={<Location />} />
+      </Routes>
+    </Router >
   );
 }
 
