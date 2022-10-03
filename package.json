@@ -42,6 +42,5 @@
   "devDependencies": {
     "@types/navermaps": "^3.0.17",
     "typescript": "^4.8.3"
-  },
-  "proxy": "https://apis.data.go.kr/B551011/KorService"
+  }
 }

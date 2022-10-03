@@ -1,10 +1,12 @@
 import React from 'react';
 import { NaverMap, RenderAfterNavermapsLoaded } from 'react-naver-maps';
 import styles from './Location.module.css';
+import Banner from '../components/Banner'
 
 function Location() {
     return (
-        <div>
+        <div className={styles.container}>
+            <Banner />
             <div>Maps</div>
             <div className={styles.mapContainer}>
                 <RenderAfterNavermapsLoaded

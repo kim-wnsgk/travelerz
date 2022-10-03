@@ -3,7 +3,15 @@ import { Link } from 'react-router-dom';
 
 function Banner() {
     return (
-        <div className={styles.title}><Link to='/'>Travelerz</Link></div>
+        <div>
+            <div className={styles.title}>
+                <Link
+                    to='/'
+                    style={{ textDecoration: 'none', color: 'white' }}
+                >Travelerz</Link>
+            </div>
+        </div>
+
     );
 }
 
